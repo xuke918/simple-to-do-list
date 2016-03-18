@@ -3,7 +3,7 @@ var $input = $('#list-input');
 var $list = $('.list');
 
 $('form').on('submit', function () {
-  var $li = $('</li>');
+  var $li = $('<li>');
 
   e.preventDefault();
   $li.html($input.val());
@@ -11,7 +11,6 @@ $('form').on('submit', function () {
   $input.val('');
 
 });
-
 
 $('ul').on('click', 'li', function (e) {
   $(this).toggleClass('is-clicked');
